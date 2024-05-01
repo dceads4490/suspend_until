@@ -9,8 +9,8 @@ http://askubuntu.com/questions/61708/automatically-sleep-and-wake-up-at-specific
 Usage:
 <br/>
 1. To hibernate now on until specific time, use: 
-    <pre> sh suspend_until.sh 07:00 </pre>
-    please note the time is in 24hour time format. Please make user the suspend_until.sh is executable by this command: sudo chmod +x suspend_until.sh
+    <pre> sh suspend_until.sh hh24:mm idle_minutes </pre>
+    Please make user the suspend_until.sh is executable by this command: sudo chmod +x suspend_until.sh. If idle_minutes are provided, the system will not be suspended unless the system has been idle for at least idle_minutes.
 <br/>
 2. To schedule your PC sleep and wake up in specific time everyday, use crontab, in terminal: 
     <pre> $ sudo crontab -e </pre>
